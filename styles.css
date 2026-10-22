@@ -130,3 +130,20 @@ section { padding: 88px 0; }
 .site-footer a { color: inherit; text-decoration: none; }
 .footer-text { text-align: right; display: grid; gap: 4px; }
 @media (max-width: 700px) { .footer-text { text-align: center; } }
+
+/* Book Now */
+.estimate-form.book-cta{display:block}
+.book-cta h3{font-family:var(--serif);color:var(--navy);font-size:1.3rem;margin-bottom:8px}
+.book-cta p{color:var(--muted);margin-bottom:18px}
+.book-hero{background:var(--navy);color:#fff;padding:56px 0 44px}
+.book-hero h1{color:#fff;font-family:var(--serif);font-size:clamp(1.9rem,4vw,2.6rem);line-height:1.15;margin-bottom:12px}
+.book-hero p{color:#d3dcec;max-width:600px}
+.book-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.book-steps div{background:rgba(255,255,255,.08);border-left:4px solid var(--blue);border-radius:6px;padding:16px;color:#e6ecf6}
+.book-steps b{display:block;color:#fff;font-size:1.05rem;margin-bottom:4px}
+.book-main{padding:48px 0 64px;background:var(--tint)}
+.book-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;max-width:720px;margin:0 auto;text-align:center}
+.book-card h2{font-family:var(--serif);color:var(--navy);margin-bottom:10px}
+.book-card p{color:var(--muted);margin-bottom:22px}
+.book-card .small{font-size:.92rem;margin:18px 0 0}
+@media(max-width:760px){.book-steps{grid-template-columns:1fr}.book-card{padding:24px 18px}}

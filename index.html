@@ -28,7 +28,7 @@
       <a href="#childproofing">Childproofing</a>
       <a href="#work">Our Work</a>
       <a href="#about">About</a>
-      <a href="#estimate" class="btn btn-sm nav-cta">Request an Estimate <span aria-hidden="true">→</span></a>
+      <a href="book.html" class="btn btn-sm nav-cta">Book Now <span aria-hidden="true">→</span></a>
     </nav>
   </div>
 </header>
@@ -39,7 +39,7 @@
     <div class="wrap hero-inner">
       <h1>Full-Service Remodeling &amp; Home Repairs Done Right</h1>
       <p>Quality craftsmanship for remodeling, flooring, tile, carpentry, doors, trim, repairs, and home improvements throughout the Grand Strand.</p>
-      <a href="#estimate" class="btn">Request an Estimate <span aria-hidden="true">→</span></a>
+      <a href="book.html" class="btn">Request an Estimate <span aria-hidden="true">→</span></a>
     </div>
   </section>
 
@@ -63,7 +63,7 @@
               <li>Flooring and trip-hazard corrections</li>
               <li>Customized accessibility solutions</li>
             </ul>
-            <a href="#estimate" class="btn btn-sm" data-service="Aging in Place">Ask About Aging in Place <span aria-hidden="true">→</span></a>
+            <a href="book.html" class="btn btn-sm" data-service="Aging in Place">Ask About Aging in Place <span aria-hidden="true">→</span></a>
           </div>
         </article>
 
@@ -80,7 +80,7 @@
               <li>Home hazard assessments</li>
               <li>Customized solutions for the home</li>
             </ul>
-            <a href="#estimate" class="btn btn-sm" data-service="Childproofing">Ask About Childproofing <span aria-hidden="true">→</span></a>
+            <a href="book.html" class="btn btn-sm" data-service="Childproofing">Ask About Childproofing <span aria-hidden="true">→</span></a>
           </div>
         </article>
       </div>
@@ -108,7 +108,7 @@
         <h2>Proudly Serving the Grand Strand</h2>
         <p>Local, reliable, and committed to quality craftsmanship in the communities we call home, from Myrtle Beach across the Grand Strand.</p>
         <p class="license">South Carolina Specialty Contractor License #63242</p>
-        <a href="#estimate" class="btn">Request an Estimate <span aria-hidden="true">→</span></a>
+        <a href="book.html" class="btn">Request an Estimate <span aria-hidden="true">→</span></a>
       </div>
       <ul class="values">
         <li>
@@ -144,29 +144,17 @@
     <div class="wrap estimate-inner">
       <div class="estimate-copy">
         <h2>Request Your Free Estimate</h2>
-        <p>Let's talk about how we can help with your remodeling or home repair needs. Tell us a little about the project and we'll get back to you.</p>
+        <p>Let's talk about how we can help with your remodeling or home repair needs. Book online or give us a call.</p>
         <p class="contact-line">
           <a href="tel:8432742359" class="contact-phone">(843) 274-2359</a><br>
           <a href="mailto:info@simplycraftedconstruction.com" class="contact-email">info@simplycraftedconstruction.com</a>
         </p>
       </div>
-      <form class="estimate-form" id="estimate-form">
-        <label>Name<input name="name" required autocomplete="name"></label>
-        <label>Phone<input name="phone" type="tel" required autocomplete="tel"></label>
-        <label>Email<input name="email" type="email" autocomplete="email"></label>
-        <label>Service
-          <select name="service">
-            <option>Remodeling</option>
-            <option>Home Repairs</option>
-            <option>Aging in Place</option>
-            <option>Childproofing</option>
-            <option>Other</option>
-          </select>
-        </label>
-        <label class="full">Project address<input name="address" autocomplete="street-address"></label>
-        <label class="full">Project details<textarea name="details" rows="4" required placeholder="What are you looking to have done?"></textarea></label>
-        <button type="submit" class="btn full">Request an Estimate <span aria-hidden="true">→</span></button>
-      </form>
+      <div class="estimate-form book-cta">
+        <h3>Book your free estimate online</h3>
+        <p>Pick a preferred date and time, tell us about the project, and add photos if you have them. We'll confirm your visit.</p>
+        <a href="book.html" class="btn full">Book Now <span aria-hidden="true">→</span></a>
+      </div>
     </div>
   </section>
 
@@ -206,19 +194,6 @@
     nav.classList.remove("open"); toggle.setAttribute("aria-expanded", false);
   }));
 
-  // Pre-select service when coming from a card button
-  document.querySelectorAll("[data-service]").forEach(b => b.addEventListener("click", () => {
-    document.querySelector("#estimate-form select").value = b.dataset.service;
-  }));
-
-  // Estimate form: opens the visitor's email app with the request filled in.
-  // (Swap for a GoHighLevel form embed later.)
-  document.getElementById("estimate-form").addEventListener("submit", e => {
-    e.preventDefault();
-    const f = new FormData(e.target);
-    const body = `Name: ${f.get("name")}\nPhone: ${f.get("phone")}\nEmail: ${f.get("email")}\nProject Address: ${f.get("address")}\nService: ${f.get("service")}\n\n${f.get("details")}`;
-    window.location.href = `mailto:${BUSINESS_EMAIL}?subject=${encodeURIComponent("Estimate request: " + f.get("service"))}&body=${encodeURIComponent(body)}`;
-  });
 </script>
 </body>
 </html>

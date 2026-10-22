@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Now | Simply Crafted Construction LLC | Grand Strand, SC</title>
+<meta name="description" content="Book a free remodeling or home repair estimate with Simply Crafted Construction LLC in the Grand Strand, SC.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="brand" aria-label="Simply Crafted Construction LLC home">
+      <img src="images/logo.png" alt="Simply Crafted Construction LLC" width="138" height="57">
+    </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Remodeling &amp; Repairs</a>
+      <a href="index.html#aging">Aging in Place</a>
+      <a href="index.html#childproofing">Childproofing</a>
+      <a href="index.html#work">Our Work</a>
+      <a href="index.html#about">About</a>
+      <a href="book.html" class="btn btn-sm nav-cta">Book Now <span aria-hidden="true">→</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="book-hero">
+    <div class="wrap">
+      <p class="eyebrow" style="color:#9fc0f5;text-align:left">Book Now</p>
+      <h1>Book Your Free Estimate</h1>
+      <p>Remodeling, home repairs, aging-in-place and childproofing throughout the Grand Strand. Request a visit online and we'll confirm the time with you.</p>
+      <div class="book-steps">
+        <div><b>1. Request a visit</b>Pick a preferred date and tell us about the project.</div>
+        <div><b>2. We confirm</b>We reach out to lock in your appointment.</div>
+        <div><b>3. Get your estimate</b>We walk the project and give you a clear price.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book-main">
+    <div class="wrap">
+      <div class="book-card">
+        <h2>Ready to get started?</h2>
+        <p>Our secure booking form takes about two minutes. You can add photos of the project too.</p>
+        <a href="https://simplycrafted.dripjobs.com" class="btn">Open the Booking Form <span aria-hidden="true">→</span></a>
+        <p class="small">Prefer to talk? Call <a href="tel:8432742359" style="color:var(--blue);font-weight:600">(843) 274-2359</a> or email <a href="mailto:info@simplycraftedconstruction.com" style="color:var(--blue);font-weight:600">info@simplycraftedconstruction.com</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <img src="images/logo-white.png" alt="Simply Crafted Construction LLC" width="168" height="66">
+    <div class="footer-text">
+      <p><a href="tel:8432742359">(843) 274-2359</a> · <a href="mailto:info@simplycraftedconstruction.com">info@simplycraftedconstruction.com</a></p>
+      <p>SC Specialty Contractor License #63242 · Serving the Grand Strand, SC</p>
+      <p>© <span id="year">2026</span> Simply Crafted Construction LLC · Quality Construction. A Stronger Tomorrow.™</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  const toggle = document.querySelector(".menu-toggle"), nav = document.getElementById("site-nav");
+  toggle.addEventListener("click", () => { const open = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", open); });
+</script>
+</body>
+</html>
