@@ -10,6 +10,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script>
+  // Turn on scroll animations only if supported and the visitor allows motion.
+  if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    document.documentElement.classList.add("reveal-on");
+    setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.remove("reveal-on"); }, 3000);
+  }
+</script>
+<script src="reveal.js" defer></script>
 </head>
 <body>
 
@@ -37,19 +45,19 @@
   <section class="book-hero">
     <div class="wrap">
       <p class="eyebrow" style="color:#9fc0f5;text-align:left">Book Now</p>
-      <h1>Book Your Free Estimate</h1>
-      <p>Remodeling, home repairs, aging-in-place and childproofing throughout the Grand Strand. Request a visit online and we'll confirm the time with you.</p>
+      <h1 data-reveal>Book Your Free Estimate</h1>
+      <p data-reveal>Remodeling, home repairs, aging-in-place and childproofing throughout the Grand Strand. Request a visit online and we'll confirm the time with you.</p>
       <div class="book-steps">
-        <div><b>1. Request a visit</b>Pick a preferred date and tell us about the project.</div>
-        <div><b>2. We confirm</b>We reach out to lock in your appointment.</div>
-        <div><b>3. Get your estimate</b>We walk the project and give you a clear price.</div>
+        <div data-reveal><b>1. Request a visit</b>Pick a preferred date and tell us about the project.</div>
+        <div data-reveal><b>2. We confirm</b>We reach out to lock in your appointment.</div>
+        <div data-reveal><b>3. Get your estimate</b>We walk the project and give you a clear price.</div>
       </div>
     </div>
   </section>
 
   <section class="book-main">
     <div class="wrap">
-      <div class="book-card">
+      <div class="book-card" data-reveal="zoom">
         <h2>Ready to get started?</h2>
         <p>Our secure booking form takes about two minutes. You can add photos of the project too.</p>
         <a href="https://simplycrafted.dripjobs.com" class="btn">Open the Booking Form <span aria-hidden="true">→</span></a>

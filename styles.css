@@ -147,3 +147,10 @@ section { padding: 88px 0; }
 .book-card p{color:var(--muted);margin-bottom:22px}
 .book-card .small{font-size:.92rem;margin:18px 0 0}
 @media(max-width:760px){.book-steps{grid-template-columns:1fr}.book-card{padding:24px 18px}}
+
+/* Scroll animations (see reveal.js) */
+.reveal-on [data-reveal] { opacity: 0; transform: translateY(36px); transition: opacity .6s ease-out, transform .8s cubic-bezier(.34, 1.45, .64, 1); will-change: opacity, transform; }
+.reveal-on [data-reveal="left"] { transform: translateX(-48px); }
+.reveal-on [data-reveal="right"] { transform: translateX(48px); }
+.reveal-on [data-reveal="zoom"] { transform: scale(.9); }
+.reveal-on [data-reveal].revealed { opacity: 1; transform: none; }
