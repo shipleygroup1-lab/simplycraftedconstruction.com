@@ -3,16 +3,41 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Simply Crafted Construction LLC | Remodeling &amp; Home Repairs | Grand Strand, SC</title>
+<title>Aging-in-Place &amp; Childproofing Contractor | Grand Strand, SC | Simply Crafted Construction LLC</title>
 <link rel="canonical" href="https://simplycraftedconstruction.com/">
-<meta name="description" content="Full-service remodeling, home repairs, aging-in-place modifications and childproofing throughout the Grand Strand, SC. Request a free estimate from Simply Crafted Construction LLC.">
+<meta name="description" content="Aging-in-place modifications and childproofing for Grand Strand homes, with high-end, custom finishes. Licensed SC contractor #63242. Free in-home estimate from Simply Crafted Construction LLC.">
 <link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<style>
+  /* New-homepage additions (preview) */
+  html, body { overflow-x: clip; }
+  .hero { background-image: url(images/aging.jpg); }
+  .hero .eyebrow-light { text-transform: uppercase; letter-spacing: .16em; font-weight: 700; font-size: 13px; color: #b9d0f5; margin: 0 0 14px; }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+  .btn-ghost { background: transparent; border: 1.5px solid rgba(255,255,255,.8); }
+  .btn-ghost:hover { background: rgba(255,255,255,.12); }
+  .who { padding: 56px 0; border-bottom: 1px solid var(--line); }
+  .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .who-grid div { border-left: 4px solid var(--blue); padding: 6px 0 6px 16px; }
+  .who-grid b { display: block; font-family: var(--serif); color: var(--navy); font-size: 18px; margin-bottom: 4px; }
+  .who-grid span { color: var(--muted); font-size: 15px; }
+  .card .checks { grid-template-columns: 1fr; }
+  .steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; counter-reset: step; }
+  .steps li { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 26px; counter-increment: step; }
+  .steps li::before { content: counter(step); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--blue); color: #fff; font-weight: 700; margin-bottom: 14px; }
+  .steps b { display: block; font-family: var(--serif); color: var(--navy); font-size: 19px; margin-bottom: 6px; }
+  .steps span { color: var(--muted); font-size: 15px; }
+  .also { background: var(--tint); padding: 56px 0; }
+  .also h2 { font-size: 24px; text-align: center; }
+  .also p.small { text-align: center; color: var(--muted); max-width: 620px; margin: 0 auto 22px; font-size: 15px; }
+  .also-list { list-style: none; padding: 0; margin: 0 auto; max-width: 900px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .also-list li { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px; text-align: center; font-weight: 600; color: var(--navy); font-size: 15px; }
+  @media (max-width: 1000px) { .who-grid, .steps, .also-list { grid-template-columns: 1fr; } }
+</style>
 <script>
-  // Turn on scroll animations only if supported and the visitor allows motion.
   if ("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
     document.documentElement.classList.add("reveal-on");
     setTimeout(function () { if (!window.__revealReady) document.documentElement.classList.remove("reveal-on"); }, 3000);
@@ -32,11 +57,11 @@
     </button>
     <nav id="site-nav" class="site-nav">
       <a href="#top" class="active">Home</a>
-      <a href="#services">Remodeling &amp; Repairs</a>
       <a href="#aging">Aging in Place</a>
       <a href="#childproofing">Childproofing</a>
-      <a href="#work">Our Work</a>
+      <a href="#how">How It Works</a>
       <a href="#about">About</a>
+      <a href="#also">Other Services</a>
       <a href="book.html" class="btn btn-sm nav-cta">Book Now <span aria-hidden="true">→</span></a>
     </nav>
   </div>
@@ -46,31 +71,44 @@
 
   <section class="hero">
     <div class="wrap hero-inner">
-      <h1 data-reveal>Full-Service Remodeling &amp; Home Repairs Done Right</h1>
-      <p data-reveal>Quality craftsmanship for remodeling, flooring, tile, carpentry, doors, trim, repairs, and home improvements throughout the Grand Strand.</p>
-      <div data-reveal><a href="book.html" class="btn">Request an Estimate <span aria-hidden="true">→</span></a></div>
+      <p class="eyebrow-light" data-reveal>Home Safety for Every Stage of Life</p>
+      <h1 data-reveal>Aging-in-Place &amp; Childproofing for Grand Strand Homes</h1>
+      <p data-reveal>Safe, custom and beautiful. We plan, supply and install home safety upgrades with high-end finishes, so your home works for you, your parents and your kids.</p>
+      <div class="hero-actions" data-reveal>
+        <a href="book.html" class="btn">Book a Free In-Home Visit <span aria-hidden="true">→</span></a>
+        <a href="tel:8432742359" class="btn btn-ghost contact-phone">(843) 274-2359</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="who" aria-label="Who we help">
+    <div class="wrap who-grid">
+      <div data-reveal><b>Planning to stay home</b><span>Homeowners who want to stay in the home they love, safely, for years to come.</span></div>
+      <div data-reveal><b>Helping aging parents</b><span>Adult children who want Mom or Dad safer at home, with one local company to call.</span></div>
+      <div data-reveal><b>Growing families</b><span>New parents and grandparents getting the house ready for little ones.</span></div>
     </div>
   </section>
 
   <section class="safety">
     <div class="wrap">
-      <p class="eyebrow" data-reveal>Specialty Home Safety Services</p>
-      <h2 class="section-title" data-reveal>Safe Homes for Every Stage of Life</h2>
-      <p class="lede" data-reveal>Thoughtful solutions to help you and your family live safer, more comfortably, and more independently at home.</p>
+      <p class="eyebrow" data-reveal>What We Do</p>
+      <h2 class="section-title" data-reveal>Safety That Looks Custom, Not Clinical</h2>
+      <p class="lede" data-reveal>Every upgrade is planned for your home and finished to match it. No hospital look, no cheap add-ons.</p>
 
       <div class="cards">
         <article class="card" id="aging" data-reveal="left">
           <img src="images/aging.jpg" alt="Accessible bathroom with grab bar and shower bench" loading="lazy">
           <div class="card-body">
-            <h3>Aging-in-Place Home Improvements</h3>
-            <p>Thoughtful home modifications designed to help you or your loved ones live safely, comfortably, and independently at home for years to come.</p>
+            <h3>Aging-in-Place Modifications</h3>
+            <p>Help you or your loved ones live safely, comfortably and independently at home.</p>
             <ul class="checks">
-              <li>Safer bathrooms and showers</li>
-              <li>Grab bars and handrails</li>
-              <li>Easier entryways</li>
-              <li>Improved lighting</li>
-              <li>Flooring and trip-hazard corrections</li>
-              <li>Customized accessibility solutions</li>
+              <li>Designer grab bars that look like towel bars</li>
+              <li>Curbless, walk-in showers with linear drains</li>
+              <li>Fold-away shower seats and handheld showers</li>
+              <li>Comfort-height toilets</li>
+              <li>Ramps, platform lifts and stair solutions</li>
+              <li>Lever door handles and wider doorways</li>
+              <li>Motion-sensor path lighting and trip-hazard fixes</li>
             </ul>
             <a href="book.html" class="btn btn-sm" data-service="Aging in Place">Ask About Aging in Place <span aria-hidden="true">→</span></a>
           </div>
@@ -80,14 +118,15 @@
           <img src="images/childproof.jpg" alt="Toddler at a safety gate at the bottom of a staircase" loading="lazy">
           <div class="card-body">
             <h3>Childproofing &amp; Family Home Safety</h3>
-            <p>Practical home modifications that help create a safer environment for growing families.</p>
+            <p>Professionally installed safety that fits your home, not a box-store kit.</p>
             <ul class="checks">
-              <li>Stair and railing safety</li>
-              <li>Door and window protection</li>
-              <li>Cabinet and furniture safety</li>
-              <li>Barriers and gates</li>
-              <li>Home hazard assessments</li>
-              <li>Customized solutions for the home</li>
+              <li>Custom stair and banister gates</li>
+              <li>Clear and retractable gates</li>
+              <li>Furniture and TV anti-tip anchors</li>
+              <li>Hidden magnetic cabinet locks</li>
+              <li>Window guards and window stops</li>
+              <li>Removable pool safety fencing and door alarms</li>
+              <li>Whole-home safety walk-through</li>
             </ul>
             <a href="book.html" class="btn btn-sm" data-service="Childproofing">Ask About Childproofing <span aria-hidden="true">→</span></a>
           </div>
@@ -96,72 +135,67 @@
     </div>
   </section>
 
-  <section class="services" id="services">
+  <section id="how">
     <div class="wrap">
-      <h2 class="section-title" data-reveal>Full-Service Remodeling &amp; Home Repairs</h2>
-      <p class="lede" data-reveal>From individual home repairs to complete remodeling projects, Simply Crafted Construction LLC provides professional craftsmanship with one company homeowners can call for a wide range of improvements.</p>
-      <ul class="tiles">
-        <li data-reveal><img src="images/kitchens.jpg" alt="" loading="lazy"><span>Kitchens</span></li>
-        <li data-reveal><img src="images/bathrooms.jpg" alt="" loading="lazy"><span>Bathrooms</span></li>
-        <li data-reveal><img src="images/flooring.jpg" alt="" loading="lazy"><span>Flooring</span></li>
-        <li data-reveal><img src="images/carpentry.jpg" alt="" loading="lazy"><span>Carpentry &amp; Trim</span></li>
-        <li data-reveal><img src="images/doors.jpg" alt="" loading="lazy"><span>Doors &amp; Windows</span></li>
-        <li data-reveal><img src="images/repairs.jpg" alt="" loading="lazy"><span>Repairs &amp; Home Improvements</span></li>
-      </ul>
+      <h2 class="section-title" data-reveal>How It Works</h2>
+      <ol class="steps">
+        <li data-reveal><b>Free in-home visit</b><span>We walk through your home with you and talk about who lives there and what would make it safer.</span></li>
+        <li data-reveal><b>Your written plan</b><span>You get a clear plan and quote with product choices and finishes that match your home.</span></li>
+        <li data-reveal><b>Professional install</b><span>We supply and install everything, clean up, and walk you through it when we're done.</span></li>
+      </ol>
     </div>
   </section>
 
   <section class="area" id="about">
     <div class="wrap area-inner">
       <div data-reveal="left">
-        <h2>Proudly Serving the Grand Strand</h2>
-        <p>Local, reliable, and committed to quality craftsmanship in the communities we call home, from Myrtle Beach across the Grand Strand.</p>
-        <p class="license">South Carolina Specialty Contractor License #63242</p>
-        <a href="book.html" class="btn">Request an Estimate <span aria-hidden="true">→</span></a>
+        <h2>Local, Licensed and Insured</h2>
+        <p>Simply Crafted Construction LLC is based in Myrtle Beach and serves homeowners across the Grand Strand. One local company to plan it, supply it and install it right.</p>
+        <p class="license">SC Specialty Contractor License #63242 · Insured · Member, Myrtle Beach Area Chamber of Commerce</p>
+        <a href="book.html" class="btn">Book a Free In-Home Visit <span aria-hidden="true">→</span></a>
       </div>
       <ul class="values">
         <li data-reveal="zoom">
           <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></span>
-          Quality Craftsmanship
+          High-End Finishes
         </li>
         <li data-reveal="zoom">
           <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 14l2 2 4-4"/></svg></span>
-          Reliable Service
+          Licensed &amp; Insured
         </li>
         <li data-reveal="zoom">
           <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.4"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M15 14.5c.6-.3 1.3-.5 2-.5 2.8 0 5 2.2 5 5"/></svg></span>
-          Solutions for Every Stage
+          Every Stage of Life
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="work" id="work">
+  <section class="also" id="also">
     <div class="wrap">
-      <h2 class="section-title" data-reveal>Our Work</h2>
-      <!-- Replace these with real Simply Crafted project photos before running ads. -->
-      <div class="gallery">
-        <img data-reveal="zoom" src="images/work1.jpg" alt="Kitchen remodel with navy island" loading="lazy">
-        <img data-reveal="zoom" src="images/work2.jpg" alt="Bathroom with walk-in glass shower" loading="lazy">
-        <img data-reveal="zoom" src="images/work3.jpg" alt="Porch and deck with white railings" loading="lazy">
-        <img data-reveal="zoom" src="images/work4.jpg" alt="Living room with shiplap accent wall" loading="lazy">
-      </div>
+      <h2>Also From Simply Crafted</h2>
+      <p class="small">Home safety is our focus. We also take on these projects:</p>
+      <ul class="also-list">
+        <li>Metal buildings, carports, garages &amp; shops</li>
+        <li>Bathroom &amp; kitchen updates designed for safety</li>
+        <li>Select custom carpentry &amp; home improvements</li>
+      </ul>
     </div>
   </section>
 
   <section class="estimate" id="estimate">
     <div class="wrap estimate-inner">
       <div class="estimate-copy" data-reveal="left">
-        <h2>Request Your Free Estimate</h2>
-        <p>Let's talk about how we can help with your remodeling or home repair needs. Book online or give us a call.</p>
+        <h2>Book Your Free In-Home Visit</h2>
+        <p>Tell us who you're making the home safer for, and we'll come out, look it over and give you a written plan. Book online or give us a call.</p>
         <p class="contact-line">
           <a href="tel:8432742359" class="contact-phone">(843) 274-2359</a><br>
           <a href="mailto:info@simplycraftedconstruction.com" class="contact-email">info@simplycraftedconstruction.com</a>
         </p>
       </div>
       <div class="estimate-form book-cta" data-reveal="right">
-        <h3>Book your free estimate online</h3>
-        <p>Pick a preferred date and time, tell us about the project, and add photos if you have them. We'll confirm your visit.</p>
+        <h3>Book online</h3>
+        <p>Pick a preferred date and time, tell us about the home and who it's for, and add photos if you have them. We'll confirm your visit.</p>
         <a href="book.html" class="btn full">Book Now <span aria-hidden="true">→</span></a>
       </div>
     </div>
@@ -182,28 +216,17 @@
 </footer>
 
 <script>
-  // ===== Edit these two lines with the real contact info =====
   const BUSINESS_PHONE = "(843) 274-2359";
   const BUSINESS_EMAIL = "info@simplycraftedconstruction.com";
-  // ===========================================================
-
   document.querySelectorAll(".contact-phone").forEach(a => { a.textContent = BUSINESS_PHONE; a.href = "tel:" + BUSINESS_PHONE.replace(/[^\d+]/g, ""); });
   document.querySelectorAll(".contact-email").forEach(a => { a.textContent = BUSINESS_EMAIL; a.href = "mailto:" + BUSINESS_EMAIL; });
   document.querySelectorAll(".contact-phone-text").forEach(s => s.textContent = BUSINESS_PHONE);
   document.querySelectorAll(".contact-email-text").forEach(s => s.textContent = BUSINESS_EMAIL);
   document.getElementById("year").textContent = new Date().getFullYear();
-
-  // Mobile menu
   const toggle = document.querySelector(".menu-toggle");
   const nav = document.getElementById("site-nav");
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", open);
-  });
-  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
-    nav.classList.remove("open"); toggle.setAttribute("aria-expanded", false);
-  }));
-
+  toggle.addEventListener("click", () => { const open = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", open); });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => { nav.classList.remove("open"); toggle.setAttribute("aria-expanded", false); }));
 </script>
 </body>
 </html>
